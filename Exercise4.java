@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Exercise4 {
 
     public static double fahrenheitToCelsius(double fahrenheit) {
@@ -9,13 +11,18 @@ public class Exercise4 {
     }
 
     public static void main(String[] args) {
-        double fahrenheit = 100;
-        double celsius = 37;
+        System.out.print("enter Fahrenheit: ");
+        Scanner sc = new Scanner(System.in);
+        double fahrenheit=sc.nextDouble();
 
         System.out.println(fahrenheit + " F = "
                 + fahrenheitToCelsius(fahrenheit) + " C");
+        System.out.print("enter Celsius:");
+        double celsius= sc.nextDouble();
 
         System.out.println(celsius + " C = "
                 + celsiusToFahrenheit(celsius) + " F");
+
+        sc.close();
     }
 }
