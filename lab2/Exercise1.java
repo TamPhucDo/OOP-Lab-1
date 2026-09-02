@@ -18,6 +18,7 @@ public class Exercise1 {
             arr[i]=sc.nextInt();
 
         }
+        sc.close();
         return arr;
         
     }
