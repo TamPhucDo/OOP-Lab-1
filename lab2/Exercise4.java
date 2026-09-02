@@ -21,6 +21,7 @@ public class Exercise4 {
             arr[i]=sc.nextInt();
 
         }
+        sc.close();
         return arr;
     }
 
@@ -37,5 +38,6 @@ public class Exercise4 {
         int result = countElement(arr, k);
 
         System.out.println(k + " appears " + result);
+        sc.close();
     }
 }
